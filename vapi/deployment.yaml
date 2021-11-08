@@ -1,0 +1,13 @@
+apiVersion: v1alpha1
+group: management
+kind: Deployment
+name: webhooksite
+metadata:
+  scope:
+    kind: Environment
+    name: ampgw-gm-nlb
+tags:
+  - v1
+spec:
+  virtualAPIRelease: webhooksite-1.0.0
+  virtualHost: "ampgw-gm-nlb.ampgw.sandbox.axwaytest.net"
